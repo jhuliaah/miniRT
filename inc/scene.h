@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   scene.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmariano <mmariano@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: jhualves <jhualves@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 19:10:26 by mmariano          #+#    #+#             */
-/*   Updated: 2025/08/21 18:29:11 by mmariano         ###   ########.fr       */
+/*   Updated: 2025/09/02 16:29:13 by jhualves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,22 @@
 #include <math.h> //for math functions
 #include <fcntl.h>
 
+# ifndef EPSYLON
+# define EPSYLON 
+
+/*
+    cordinates:
+    x = horizontal
+    y = vertical
+    z = transversal
+    w -> vector == 0 / point == 1
+*/
 typedef struct s_vector
 {
     double x;
     double y;
     double z;
+    double w;
 }               t_vector;
 
 typedef struct s_color
